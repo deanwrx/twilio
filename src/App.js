@@ -14,7 +14,7 @@ class App extends Component {
   sendText = _ => {
     const { text } = this.state;
     //pass text message GET variables via query string
-    fetch(`http://127.0.0.1:4000/send-text?recipient=${text.recipient}&textmessage=${text.textmessage}`)
+    fetch(`http://18.221.135.152:3001/send-text?recipient=${text.recipient}&textmessage=${text.textmessage}`)
     .catch(err => console.error(err))
   }
 
